@@ -55,7 +55,7 @@ def prime(n):
 num = 21
 print(prime(num))
 ```
-Q.5 Write a program for finding the leap year.
+## Q.5 Write a program for finding the leap year.
 ```python
 year = 2016
 
@@ -66,7 +66,7 @@ elif(year%4 == 0 and year%100 != 0):
 else:
     print("not a leap year")
 ```
-Q.6 Write a program for calculating the factorial of the number.
+## Q.6 Write a program for calculating the factorial of the number.
 ```python
 num = 5
 fact = 1
@@ -81,7 +81,7 @@ else:
         
     print(fact)
 ```
-Q.7 Write a program to reverse the array(list).
+## Q.7 Write a program to reverse the array(list).
 ```python
 arr = [1, 2, 3, 4, 5]
 # arr.reverse()
