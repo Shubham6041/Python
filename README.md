@@ -105,3 +105,86 @@ if(str == str1):
 else:
     print("Not a palindrome")
 ```
+## Q.10 How do you calculate the number of numerical digits in a string?
+```python
+allDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+str = "Hello45"
+
+digits = 0
+
+for i in str:
+    if i in allDigits:
+        digits += 1
+    
+print(digits)
+```
+## Q.11 How do you find the count for the occurrence of a particular character in a string?
+```python
+str = "Hello"
+count = 0
+
+for i in str:
+    if i=='l':
+        count += 1
+
+print(count)
+```
+## Q.12 How do you find out if the two given strings are anagrams?
+```python
+s1 = "Silent"
+s2 = "Listen"
+
+s1 = s1.lower()
+s2 = s2.lower()
+
+if(sorted(s1) == sorted(s2)):
+    print("Anagram")
+else:
+    print("not anagram")
+```
+## Q.13 How do you find the non-matching characters in a string?
+```python
+s1 = "Hello"
+s2 = "Hallo"
+
+if(len(s1) != len(s2)):
+    print("Strings of different length")
+else:  
+    for i in range(len(s1)):
+        if s1[i] != s2[i]:
+            print("Character not matched at index", i)
+```
+## Q.14 How do you calculate the number of vowels and consonants in a string?
+```python
+str = "Welcome"
+str = str.lower()
+
+vowels = 0
+consonants = 0
+
+for i in range(len(str)):
+    if str[i] in ('a', 'e', 'i', 'o', 'u'):
+        vowels += 1
+    elif(str[i]>='a' and str[i]<='z'):
+        consonants += 1
+
+print(vowels)
+print(consonants)
+```
+## Q.15 How do you total all of the matching integer elements in an array?
+```python
+arr = [1, 2, 3, 4, 5, 6, 4]
+target = 4
+sum = 0
+
+# for i in arr:
+#     if(i == target):
+#         sum = sum + i
+
+for i in range(len(arr)):
+    if(arr[i] == target):
+        sum = sum + arr[i]
+
+print(sum)
+```
