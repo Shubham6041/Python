@@ -90,4 +90,18 @@ arr = [1, 2, 3, 4, 5]
 for i in range(len(arr)-1, -1, -1):
     print(arr[i], end = ' ')
 ```
+## Q.8 Write a program to reverse a string in python.
+```python
+str = "Hello"
+print(str[::-1])
+```
+## Q.9 How do you determine if a string is a palindrome?
+```python
+str = "abba"
+str1 = str[::-1]
 
+if(str == str1):
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+```
