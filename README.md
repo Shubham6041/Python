@@ -188,3 +188,68 @@ for i in range(len(arr)):
 
 print(sum)
 ```
+## Q.16 How do you reverse an array?
+```python
+arr = [1, 2, 3, 4, 5, 6, 4]
+# arr.reverse()
+# print(arr)
+
+print(arr[::-1])
+```
+## Q.17 How do you find the maximum element in an array?
+```python
+arr = [2, 3, 4, 5, 7, 1]
+
+max = arr[0]
+
+for i in range(len(arr)):
+    if(arr[i]>max):
+        max = arr[i]
+
+print(max)
+```
+## Q.18 How do you find the smallest element in an array?
+```python
+arr = [2, 3, 4, 5, 7, 1]
+
+min = arr[0]
+
+for i in range(len(arr)):
+    if(arr[i]<min):
+        min = arr[i]
+
+print(min)
+```
+## Q.19 How do you find the second largest element in an array?
+```python
+arr = [2, 3, 4, 5, 7, 1]
+
+arr.sort()
+
+second_largest = arr[-2]
+print(second_largest)
+```
+## Q.20 How do you find the second smallest element in an array?
+```python
+arr = [2, 3, 4, 5, 7, 1]
+
+arr.sort()
+
+second_smallest = arr[1]
+print(second_smallest)
+```
+## Q.21 How do you sort an array of integers in ascending order?(Bubble sort)
+```python
+arr = [2, 3, 4, 5, 7, 1]
+
+temp = 0
+
+for i in range(len(arr)):
+    for j in range(i+1, len(arr)):
+        if(arr[i] > arr[j]):
+            temp = arr[i]
+            arr[i] = arr[j]
+            arr[j] = temp
+
+print(arr)
+```
