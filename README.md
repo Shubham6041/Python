@@ -253,3 +253,83 @@ for i in range(len(arr)):
 
 print(arr)
 ```
+# Q.22 How do you find the average of numbers in an array?
+```python
+arr = [1, 2, 3]
+sum = 0
+
+for i in arr:
+    sum = sum + i
+
+avg = sum/len(arr)
+print(avg)
+```
+## Q.23 How do you check if an integer is even or odd?
+```python
+num = 33
+
+if(num%2 == 0):
+    print("even")
+else:
+    print("Odd")
+```
+## Q.24 How would you swap two numbers without using a third variable?
+```python
+a = 5
+b = 4
+
+b = a + b
+a = b - a
+b = b - a
+print(a, b)
+```
+## Q.25 How do you remove all occurrences of a given character from the input string?
+```python
+str = "Hello"
+str = str.replace('l', '')
+print(str)
+```
+## Q.26 Reverse words in a given string.
+```python
+str = "Sachin Ramesh Tendulkar"
+str = str.split()[::-1]
+
+str1 = ' '.join(str)
+print(str1)
+```
+## Q.27 write a program to capitalize each word in string.
+```python
+str = "sachin ramesh tendulkar"
+
+words = str.split(' ')
+ret = []
+
+for i in words:
+    ret.append(i.capitalize())
+
+print(' '.join(ret))
+```
+## Q.28 Write a program to reverse each word in a string.
+```python
+str = "sachin ramesh tendulkar"
+
+words = str.split(' ')
+result = []
+for i in words:
+    result.append(i[::-1])
+
+print(' '.join(result))
+```
+## Q.29 How to remove all white spaces from a String in Java?
+```python
+str = "sachin rame   sh tendulkar"
+
+str = str.replace(' ', '')
+print(str)
+```
+## Q.30 Write a program to count the number of words in a string?
+```python
+str = "My name is Sachin"
+wordCount = len(str.split(' '))
+print(wordCount)
+```
